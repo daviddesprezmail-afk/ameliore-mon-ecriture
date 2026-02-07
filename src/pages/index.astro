@@ -1,65 +1,96 @@
 ---
-const title = "Améliore mon écriture";
+import "../styles/global.css";
 ---
 
 <!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <title>{title}</title>
-    <meta name="description" content="Analyse de l’écriture manuscrite grâce à l’intelligence artificielle. Un premier bilan clair et pédagogique." />
+    <title>Améliore mon écriture</title>
+    <meta
+      name="description"
+      content="Analyse de l’écriture manuscrite grâce à l’intelligence artificielle. Un premier bilan clair et pédagogique."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <body>
-    <main style="max-width: 700px; margin: 40px auto; font-family: Arial, sans-serif;">
-      
-      <h1>Améliore ton écriture grâce à l’IA</h1>
+    <main class="container">
+      <!-- HERO -->
+    <section style="display: flex; gap: 40px; align-items: center; flex-wrap: wrap;">
 
-      <p>
-        <strong>ameliore-mon-ecriture.fr</strong> propose une analyse intelligente de l’écriture manuscrite,
-        pensée pour les enfants, les parents et les enseignants.
+  <div style="flex: 1; min-width: 280px;">
+    <h1 style="font-size: 2.6rem;">
+      Vous avez des interrogations sur l'écriture de votre enfant ?
+      N'attendez plus et faîtes le test!
+    </h1>
+    <p style="font-size: 1.2rem;">
+      Une analyse simple et pédagogique de l’écriture manuscrite,
+      pour mieux comprendre les difficultés et progresser.
+    </p>
+  </div>
+
+  <div style="flex: 1; min-width: 280px;">
+    <img
+      src="/images/ecriture-main.jpg"
+      alt="Écriture manuscrite analysée par intelligence artificielle"
+      style="
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      "
+    />
+  </div>
+
+</section>
+
+
+
+      <!-- COMMENT ÇA MARCHE -->
+      <section>
+        <h2>Comment ça fonctionne ?</h2>
+        <ol>
+          <li>Tu prends en photo une écriture manuscrite</li>
+          <li>L’IA analyse la lisibilité, la régularité et le rythme</li>
+          <li>Tu reçois un bilan simple et compréhensible</li>
+        </ol>
+      </section>
+
+      <!-- POUR QUI -->
+      <section>
+        <h2>Pour qui ?</h2>
+        <p>
+          Parents, enseignants et professionnels souhaitant mieux comprendre
+          l’écriture et détecter d’éventuelles difficultés.
+        </p>
+      </section>
+
+      <!-- CTA -->
+      <section>
+        <h2>Bientôt disponible</h2>
+        <p>
+          Le service est en cours de développement.
+          Laisse ton email pour être informé du lancement.
+        </p>
+
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
+          <input
+            type="email"
+            name="email"
+            placeholder="Ton adresse email"
+            required
+          />
+          <br /><br />
+          <button type="submit">Être informé</button>
+        </form>
+      </section>
+
+      <!-- DISCLAIMER -->
+      <p class="footer-note">
+        ⚠️ Cet outil est une aide pédagogique et ne remplace pas
+        un avis médical ou thérapeutique.
       </p>
-
-      <h2>Comment ça fonctionne ?</h2>
-      <ol>
-        <li>Tu prends en photo une écriture manuscrite</li>
-        <li>L’IA analyse la lisibilité, la régularité et le rythme</li>
-        <li>Tu reçois un bilan clair et pédagogique</li>
-      </ol>
-
-      <h2>Pourquoi ce projet ?</h2>
-      <p>
-        L’objectif est de fournir un premier regard objectif sur l’écriture,
-        pour mieux comprendre les difficultés possibles et orienter si besoin
-        vers un professionnel.
-      </p>
-
-      <h2>Bientôt disponible</h2>
-      <p>
-        Le service est en cours de développement.
-        Laisse ton email pour être informé du lancement.
-      </p>
-
-      <form name="contact" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact" />
-        <input
-          type="email"
-          name="email"
-          placeholder="Ton adresse email"
-          required
-          style="padding: 8px; width: 100%; max-width: 300px;"
-        />
-        <br /><br />
-        <button type="submit" style="padding: 10px 20px;">
-          Être informé
-        </button>
-      </form>
-
-      <p style="font-size: 0.8em; margin-top: 30px; color: #555;">
-        ⚠️ Cet outil est une aide pédagogique et ne remplace pas un avis médical ou thérapeutique.
-      </p>
-
     </main>
   </body>
 </html>

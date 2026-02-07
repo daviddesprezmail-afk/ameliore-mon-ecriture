@@ -1,0 +1,68 @@
+---
+import "../styles/global.css";
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact - Améliore mon écriture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>Contact</h1>
+
+      <p>
+        Une question, une suggestion ou une demande ? Vous pouvez me contacter via ce formulaire.
+      </p>
+
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+
+        <p>
+          <label>Nom</label><br />
+          <input type="text" name="nom" required />
+        </p>
+
+        <p>
+          <label>Email</label><br />
+          <input type="email" name="email" required />
+        </p>
+
+        <p>
+          <label>Message</label><br />
+          <textarea
+            name="message"
+            rows="6"
+            required
+            style="width:100%; max-width:600px; padding:10px; border-radius:6px; border:1px solid #cbd5e1;"
+          ></textarea>
+        </p>
+
+        <button type="submit">Envoyer</button>
+      </form>
+
+      <p style="margin-top:30px;">
+        <a href="/">← Retour à l'accueil</a>
+      </p>
+    </main>
+  </body>
+</html>
+<p style="margin-top: 20px;">
+  <a
+    href="/contact"
+    style="
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 8px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    "
+  >
+    Contact
+  </a>
+</p>
