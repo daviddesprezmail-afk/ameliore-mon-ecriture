@@ -15,82 +15,89 @@ import "../styles/global.css";
   </head>
 
   <body>
+ 
+<header style="background: white; border-bottom: 1px solid #e2e8f0;">
+  <div
+    style="
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    "
+  >
+    <a href="/" style="font-weight: 700; text-decoration: none; color: #1f2933;">
+      Améliore mon écriture
+    </a>
+
+    <nav style="display: flex; gap: 18px;">
+      <a href="/" style="text-decoration: none; color: #334e68; font-weight: 600;">
+        Accueil
+      </a>
+      <a href="/contact" style="text-decoration: none; color: #334e68; font-weight: 600;">
+        Contact
+      </a>
+    </nav>
+  </div>
+</header>
+<div style="height: 20px;"></div>
+
     <main class="container">
-      <!-- HERO -->
-    <section style="display: flex; gap: 40px; align-items: center; flex-wrap: wrap;">
+     <main class="container">
 
-  <div style="flex: 1; min-width: 280px;">
-    <h1 style="font-size: 2.6rem;">
-      Vous avez des interrogations sur l'écriture de votre enfant ?
-      N'attendez plus et faîtes le test!
-    </h1>
-    <p style="font-size: 1.2rem;">
-      Une analyse simple et pédagogique de l’écriture manuscrite,
-      pour mieux comprendre les difficultés et progresser.
+  <section>
+    <h1>Améliorer l’écriture de votre enfant, simplement et efficacement</h1>
+    <p>
+      Un diagnostic personnalisé de l’écriture manuscrite, réalisé par une graphothérapeute,
+      pour comprendre les difficultés et aider votre enfant à progresser.
     </p>
-  </div>
+    <a href="/diagnostic">
+  <button>Faire le diagnostic</button>
+</a>
+  </section>
 
-  <div style="flex: 1; min-width: 280px;">
-    <img
-      src="/images/ecriture-main.jpg"
-      alt="Écriture manuscrite analysée par intelligence artificielle"
-      style="
-        width: 100%;
-        border-radius: 12px;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-      "
-    />
-  </div>
+  <section>
+    <h2>Pourquoi faire analyser l’écriture de votre enfant ?</h2>
+    <ul>
+      <li>Baisse de confiance en soi</li>
+      <li>Difficultés scolaires</li>
+      <li>Fatigue lors de l’écriture</li>
+    </ul>
+  </section>
 
-</section>
+  <section>
+    <h2>Comment ça fonctionne ?</h2>
+    <ol>
+      <li>Demande en ligne</li>
+      <li>Réception d’un email avec les consignes</li>
+      <li>Analyse par une graphothérapeute</li>
+      <li>Réception du bilan personnalisé</li>
+    </ol>
+  </section>
 
+  <section>
+    <h2>Un diagnostic réalisé par une professionnelle</h2>
+    <p>
+      Chaque analyse est réalisée manuellement par une graphothérapeute spécialisée
+      dans l’accompagnement des enfants.
+    </p>
+  </section>
 
+  <section>
+    <h2>Simple, sécurisé et confidentiel</h2>
+    <p>
+      Paiement sécurisé, données confidentielles, réponse rapide.
+    </p>
+  </section>
 
-      <!-- COMMENT ÇA MARCHE -->
-      <section>
-        <h2>Comment ça fonctionne ?</h2>
-        <ol>
-          <li>Tu prends en photo une écriture manuscrite</li>
-          <li>L’IA analyse la lisibilité, la régularité et le rythme</li>
-          <li>Tu reçois un bilan simple et compréhensible</li>
-        </ol>
-      </section>
+  <section>
+    <h2>Offrez à votre enfant un diagnostic clair et utile</h2>
+   <a href="/diagnostic">
+  <button>Faire le diagnostic</button>
+</a>
+  </section>
 
-      <!-- POUR QUI -->
-      <section>
-        <h2>Pour qui ?</h2>
-        <p>
-          Parents, enseignants et professionnels souhaitant mieux comprendre
-          l’écriture et détecter d’éventuelles difficultés.
-        </p>
-      </section>
-
-      <!-- CTA -->
-      <section>
-        <h2>Bientôt disponible</h2>
-        <p>
-          Le service est en cours de développement.
-          Laisse ton email pour être informé du lancement.
-        </p>
-
-        <form name="contact" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact" />
-          <input
-            type="email"
-            name="email"
-            placeholder="Ton adresse email"
-            required
-          />
-          <br /><br />
-          <button type="submit">Être informé</button>
-        </form>
-      </section>
-
-      <!-- DISCLAIMER -->
-      <p class="footer-note">
-        ⚠️ Cet outil est une aide pédagogique et ne remplace pas
-        un avis médical ou thérapeutique.
-      </p>
-    </main>
+</main>
   </body>
 </html>
