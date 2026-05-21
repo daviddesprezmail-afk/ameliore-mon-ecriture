@@ -85,3 +85,37 @@ input[type="email"] {
 section {
   margin-bottom: 3.5rem;
 }
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  background: white;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.site-header a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.logo img {
+  height: 100px;
+}
+.article-preview {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.article-preview a {
+  text-decoration: none;
+  font-weight: bold;
+}
